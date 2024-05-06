@@ -22,7 +22,7 @@ export const formatDateTime = (dateString: Date) => {
   const dateOptions: Intl.DateTimeFormatOptions = {
     weekday: 'short', // abbreviated weekday name (e.g., 'Mon')
     month: 'short', // abbreviated month name (e.g., 'Oct')
-    year: 'numeric', // numeric year (e.g., '2023')
+    year: 'numeric', // numeric year (e.g., '2024')
     day: 'numeric', // numeric day of the month (e.g., '25')
   }
 
@@ -51,7 +51,7 @@ export const formatPrice = (price: string) => {
   const amount = parseFloat(price)
   const formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
   }).format(amount)
 
   return formattedPrice
